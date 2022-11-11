@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://kit.fontawesome.com/97248c65c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Jogo da Memória</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <ul class="cards disabled">
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-1.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-2.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-3.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-4.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-5.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-6.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-7.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-8.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-1.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-2.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-3.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-4.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-5.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-6.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-7.png" alt="card-img" />
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="view back-view">
+            <img src="images/img-8.png" alt="card-img" />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="game-nav">
+      <div class="nav-itens">
+        <div class="game-difficulties">
+          <p>Dificuldade:</p>
+          <select class="select-difficulties">
+            <option value="null" selected hidden>&#x1F937;</option>
+            <option value="facil">Fácil &#x1F60E;</option>
+            <option value="medio">Médio &#x2615;</option>
+            <option value="dificil">Difícil &#x1F525;</option>
+          </select>
+        </div>
+        <div class="nav-buttons">
+          <button class="start-game">Iniciar</button>
+          <button class="restart-game">Reiniciar</button>
+        </div>
+      </div>
+      <p class="time">
+        Para começar selecione uma dificuldade e clique em "Iniciar"!
+        <span id="seconds" class="time-green"></span>
+      </p>
+    </div>
+    <footer class="footer">
+      <span class="me-4 copyW">Feito por Wachiles &copy; 2022</span>
+      <a href="https://www.instagram.com/caikematoos/?hl=pt-br" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://github.com/wallacycaike" target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://twitter.com" target="_blank"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+    </footer>
+  </body>
+</html>
